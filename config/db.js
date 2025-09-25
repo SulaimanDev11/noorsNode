@@ -4,9 +4,9 @@ const { Sequelize, DataTypes, Op } = require('sequelize');
 
 
 const sequelize = new Sequelize(
-    "noors",
-    "root",
-    "",
+    "salahudd_noors",
+    "salahudd_noors",
+    "BYY4xte64W5CcFZ",
     {
         host: 'localhost',
         dialect: "mysql"
@@ -21,11 +21,11 @@ sequelize
         console.log('error', e);
     });
 
-// sequelize.sync({ alter: true, force: false }).then(() => {
-//     console.log('Tables synced successfully');
-// }).catch(err => {
-//     console.error('Error syncing tables:', err);
-// });
+sequelize.sync({ alter: true, force: false }).then(() => {
+    console.log('Tables synced successfully');
+}).catch(err => {
+    console.error('Error syncing tables:', err);
+});
 
 module.exports = { sequelize, Sequelize, DataTypes, Op };
 
