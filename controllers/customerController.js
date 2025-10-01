@@ -18,7 +18,7 @@ const addCustomer = async (req, res) => {
     }
 }
 
-const getAllCustomer = async (req, res) => {
+const getAllCustomers = async (req, res) => {
     const data = req.body;
 
     try {
@@ -35,5 +35,5 @@ const getAllCustomer = async (req, res) => {
 
 module.exports = {
     addCustomer,
-    getAllCustomer
+    getAllCustomers
 }
