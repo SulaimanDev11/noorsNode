@@ -29,7 +29,7 @@ const getAllTransactions = async (req, res) => {
     }
 };
 
-exports.module = {
+module.exports = {
     createTransaction,
     getAllTransactions,
 }
