@@ -18,7 +18,7 @@ const login = async (req, res) => {
     res.json({ token: generateToken(user) });
 };
 
-exports.module = {
+module.exports = {
     register,
     login
 }
