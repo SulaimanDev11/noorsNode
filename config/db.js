@@ -4,9 +4,9 @@ const { Sequelize, DataTypes, Op } = require('sequelize');
 
 
 const sequelize = new Sequelize(
-    "salahudd_noors",
-    "salahudd_noors",
-    "BYY4xte64W5CcFZ",
+    process.env.DATABASE_NAME,
+    process.env.USER_NAME,
+    "",
     {
         host: 'localhost',
         dialect: "mysql"
